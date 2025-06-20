@@ -1,0 +1,18 @@
+version: '3.8'
+
+services:
+  app:
+    build:
+      context: . # Dockerfile が存在するディレクトリを指定 (現在のディレクトリ)
+      dockerfile: Dockerfile # 使用する Dockerfile のファイル名を指定
+    ports:
+      - "3000:3000" # ホストOSのポート3000とコンテナのポート3000をマッピング
+                    # ブラウザから http://localhost:3000 でアクセスできるようになります
+    volumes:
+      - ./app:/app # ホストOSの現在のディレクトリをコンテナの /app にマウント
+               # これにより、ホストOSでファイルを変更すると、コンテナ内でも即座に反映されます
+      - /app/node_modules
+    environment:
+      NODE_ENV: development
+    command: bash
+    stdin_open: true
