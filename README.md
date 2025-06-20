@@ -28,3 +28,4 @@
     - docker-compose の env に追加するか、bun dev 実行時に追加
       - 今回は package.json に追加
       - "dev": "WATCHPACK_POLLING=true next dev",
+- vsCode上のlinterを活用したい場合は、自端末上で npm install すればOK
