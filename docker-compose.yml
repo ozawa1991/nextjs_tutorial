@@ -11,7 +11,5 @@ services:
       - ./app:/app
       - /app/node_modules
       - /app/.pnpm-store
-    environment:
-      NODE_ENV: development
     command: bash
     stdin_open: true
