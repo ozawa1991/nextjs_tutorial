@@ -38,3 +38,9 @@
   - pnpx create-next-app@latest --example with-vitest app
   - 遅いと思ったが、 .pnpm-store を ignore したところかなり早くなった
 - npm install -g pnpm@latest-10 && pnpx create-next-app@latest --example with-playwright app
+
+- pnpm で作成してみる。create-app の部分から、vitestを入れてみる。やはりplaywright は遅い
+- pnpm で install すると、approve-builds するよう警告が出る。どうやら、任意スクリプトのセキュリティの警告らしい。オプションなどで解除できるらしい
+- vitest のマニュアルセットアップをやってみる
+- <https://nextjs.org/docs/pages/guides/testing/vitest>
+- pnpm install -D vitest @vitejs/plugin-react jsdom @testing-library/react @testing-library/dom vite-tsconfig-paths
