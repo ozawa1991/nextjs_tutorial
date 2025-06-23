@@ -44,3 +44,8 @@
 - vitest のマニュアルセットアップをやってみる
 - <https://nextjs.org/docs/pages/guides/testing/vitest>
 - pnpm install -D vitest @vitejs/plugin-react jsdom @testing-library/react @testing-library/dom vite-tsconfig-paths
+- 次は React Testing Library を入れてみる
+- pnpm install -D @testing-library/react @testing-library/dom @types/react @types/react-dom
+- いい感じにTDDでやってみる
+- どうせなら watch で監視しながらやる
+  - dev でやった時と同様にWSL環境ではPOLLINGの設定が必要
