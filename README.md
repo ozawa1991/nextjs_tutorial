@@ -49,3 +49,4 @@
 - いい感じにTDDでやってみる
 - どうせなら watch で監視しながらやる
   - dev でやった時と同様にWSL環境ではPOLLINGの設定が必要
+  - toBeInTheDocument は @testing-library/jest-dom/vitest を install する必要あり
