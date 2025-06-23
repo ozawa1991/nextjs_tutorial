@@ -29,3 +29,8 @@
       - 今回は package.json に追加
       - "dev": "WATCHPACK_POLLING=true next dev",
 - vsCode上のlinterを活用したい場合は、自端末上で npm install すればOK
+
+- bun だとうまく install できずに動作しなかった場合があったので、pnpm を使用
+  - npm install -g pnpm@latest-10 で容易に入れられるので、base の image は node:lts-slim で
+  - pnpx create-next-app@latest --example with-vitest app
+  - 遅いと思ったが、 .pnpm-store を ignore したところかなり早くなった
