@@ -50,3 +50,4 @@
 - どうせなら watch で監視しながらやる
   - dev でやった時と同様にWSL環境ではPOLLINGの設定が必要
   - toBeInTheDocument は @testing-library/jest-dom/vitest を install する必要あり
+  - render 後に cleanup() をしないと 前回 render したのがそのまま残るため、テストが失敗する
